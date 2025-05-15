@@ -1,86 +1,105 @@
-# 📘 Application Note: Libelium GasSensor
+# 📘 Application Note: Libelium Gas Sensor
 
-Deze repository bevat een application note over **[onderwerp]**. Het document beschrijft het volledige proces van onderzoek, implementatie en evaluatie van een specifieke technische toepassing.
+This repository contains an application note on the **Libelium Gas Sensor Board**. It documents the full process of research, implementation, and evaluation of a specific technical application.
 
 ---
 
-## 📌 Inhoudsopgave
+## 📌 Table of Contents
 
-1. [Introductie](#1-introductie)
-2. [Doel van het Project](#2-doel-van-het-project)
-3. [Verzamelde Informatie](#3-verzamelde-informatie)
-4. [Wat is Gelukt](#4-wat-is-gelukt)
-5. [Waar We Tegenaan Liepen](#5-waar-we-tegenaan-liepen)
-6. [Conclusie en Reflectie](#6-conclusie-en-reflectie)
-7. [Repository Overzicht](#7-repository-overzicht)
-8. [Benodigdheden](#8-benodigdheden)
-9. [Licentie](#9-licentie)
+1. [Introduction](#1-introduction)  
+2. [Project Goal](#2-project-goal)  
+3. [Collected Information](#3-collected-information)  
+4. [What Went Well](#4-what-went-well)  
+5. [Challenges](#5-challenges)  
+6. [Conclusion and Reflection](#6-conclusion-and-reflection)  
+7. [Repository Structure](#7-repository-structure)  
+8. [Requirements](#8-requirements)  
+9. [License](#9-license)  
 10. [Contact / Feedback](#10-contact--feedback)
 
 ---
 
-## 1. 🧭 Introductie
+## 1. 🧭 Introduction
 
-In dit project onderzoeken we hoe [beschrijf kort wat je onderzoekt of toepast, bv. “een DHT22 temperatuursensor gekoppeld aan een STM32-microcontroller”].
+We are two students studying **Electronics-ICT**, and this GitHub repository documents our project for the course **Electronic Systems 2**.
 
----
+As part of the assignment, we were placed into teams of two and asked to work on a technical project. In this repository, we guide you through our progress — including the information we gathered, what went well, and which parts were more challenging.
 
-## 2. 🎯 Doel van het Project
+You’ll also find a conclusion where we reflect on the overall experience:  
+- What could have been improved  
+- What worked well  
+- And how others could potentially continue building on this project
 
-Het hoofddoel is om [wat wilde je bereiken? bijv. “een werkende temperatuurlogger opzetten met datalogging naar een SD-kaart”].  
-Subdoelen waren o.a.:
-
-- [subdoel 1]
-- [subdoel 2]
-- [subdoel 3]
+We hope this documentation is helpful for anyone interested in working with similar sensor boards, microcontrollers, or smart home integration.
 
 ---
 
-## 3. 📚 Verzamelde Informatie
+## 2. 🎯 Project Goal
 
-Tijdens het project hebben we de volgende bronnen gebruikt:
+In this project, we aim to get the **Libelium Gas Sensor Board** working — with or without the connection board (*interface board*).  
+We tested both setups, but eventually continued **without using the connection board**.
 
-- Datasheets:
-  - [Naam component] ([link])
-- Application notes:
-  - [Titel – fabrikant – link]
-- Tutorials en handleidingen:
-  - [YouTube-link / Blogartikel / etc.]
-- Eigen metingen en observaties
+Instead, we connected the gas sensor board **directly to an Arduino or ESP microcontroller** to read the sensor data.
 
----
+The sensor board includes **six sensors**:
+- 🌡️ Temperature sensor  
+- 💧 Humidity sensor  
+- 🟢 CO₂ (Carbon Dioxide) sensor  
+- 🟡 NO₂ (Nitrogen Dioxide) sensor  
+- 🟣 O₃ (Ozone) sensor  
+- 🔴 CO (Carbon Monoxide) sensor
 
-## 4. ✅ Wat is Gelukt
+Once we successfully read the data, the next goal was to **send this data over Wi-Fi** to a **Loxone control unit**, which would then **receive and process the information**.
 
-- [✔️ Voorbeeld: Sensor uitlezen met correcte waarden]
-- [✔️ Data naar SD-kaart schrijven]
-- [✔️ Code modulair opgebouwd in C/Python]
-- [✔️ Testmetingen succesvol uitgevoerd]
+This project focuses on monitoring air quality and making the sensor data available wirelessly for use in smart building or automation systems.
 
 ---
 
-## 5. ⚠️ Waar We Tegenaan Liepen
+## 3. 📚 Collected Information
 
-- [❌ Probleem 1: Bijvoorbeeld instabiele voeding → opgelost met condensator]
-- [❌ Probleem 2: Problemen met I2C-timeout → opgelost via debugging met logic analyzer]
-- [❌ Onvolledige documentatie bij component X → workaround gevonden door experiment]
+During the project, we used the following sources:
 
----
-
-## 6. 🧾 Conclusie en Reflectie
-
-Samengevat is het gelukt om [kort eindresultaat].  
-We hebben geleerd dat:
-
-- [Belangrijke les 1]
-- [Belangrijke les 2]
-
-Voor vervolgwerk zouden we aanbevelen om:
-
-- [Aanbeveling 1]
-- [Aanbeveling 2]
+- **Datasheets**:
+  - [Component name] ([link])
+- **Application notes**:
+  - [Title – Manufacturer – link]
+- **Tutorials and guides**:
+  - [YouTube / blog articles / etc.]
+- **Own measurements and testing**
 
 ---
 
-## 7. 📁 Repository Overzicht
+## 4. ✅ What Went Well
+
+- [✔️ Successfully read data from the sensors]
+- [✔️ Data logging to SD card]
+- [✔️ Modular code written in C/Python]
+- [✔️ Test results consistent and accurate]
+
+---
+
+## 5. ⚠️ Challenges
+
+- [❌ Issue 1: Unstable power supply → fixed using a capacitor]
+- [❌ Issue 2: I2C timeout problems → solved with logic analyzer debugging]
+- [❌ Incomplete documentation for component X → resolved by trial and error]
+
+---
+
+## 6. 🧾 Conclusion and Reflection
+
+In summary, we were able to [short summary of what was achieved].  
+What we learned:
+
+- [Lesson 1]
+- [Lesson 2]
+
+Recommendations for future development:
+
+- [Improvement idea 1]
+- [Improvement idea 2]
+
+---
+
+## 7. 📁 Repository Structure
 
