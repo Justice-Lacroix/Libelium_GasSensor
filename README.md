@@ -69,14 +69,21 @@ During the project, we used the following sources:
 
 ---
 
-## 4. ✅ What Went Well
+## 5. ✅ What Went Well
 
-- [✔️ Successfully read data from the sensors]
-- [✔️ Data logging to SD card]
-- [✔️ Modular code written in C/Python]
-- [✔️ Test results consistent and accurate]
+Although there is a lot of information available about the Libelium Gas Sensor Board through GitHub repositories and forums, there isn’t really a clear or structured guide on how to program and use the board step-by-step.
 
----
+One of the early decisions we made was to **use an Arduino with built-in Wi-Fi** instead of relying on the official Libelium connection board. This turned out to be a smart move and was one of the smoother parts of the project.
+
+Since both of us were already familiar with Arduino, this made it much easier to work with. Using a platform we knew allowed us to:
+- Quickly understand how to connect and power the sensor board
+- Write and test basic code without needing external libraries or complex drivers
+- Troubleshoot faster and with more confidence
+
+At one point, we briefly switched back to the connection board to explore its potential. However, we quickly realized it was taking too much time and didn’t provide significant advantages for our goal. Choosing to move on and focus on the Arduino setup helped us stay efficient and productive.
+
+Once we had the correct hardware configuration — Arduino plus direct-wired sensor board — we began reading out sensor data one by one. The first two sensors were especially easy to set up, and we were able to get valid readings from them in a very short time.
+
 
 ## 5. ⚠️ Challenges
 
