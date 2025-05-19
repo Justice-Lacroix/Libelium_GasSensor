@@ -6,13 +6,13 @@ This repository contains an application note on the Libelium Gas Sensor Board. I
 
 ## 📌 Table of Contents
 
-- [Introduction](#1-Introduction)  
-- [Project Goal](#2-%F0%9F%8E%AF-project-goal)  
-- [Collected Information](#3-%F0%9F%93%9A-collected-information)  
-- [What Went Well](#5-%E2%9C%85-what-went-well)  
-- [Challenges](#5-%E2%9A%A0%EF%B8%8F-challenges)  
-- [Conclusion and Reflection](#6-%F0%9F%A7%BE-conclusion-and-reflection)  
-
+- [Introduction](#1-introduction)  
+- [Project Goal](#2-project-goal)  
+- [Collected Information](#3-collected-information)  
+- [What Went Well](#5-what-went-well)  
+- [Challenges](#5-challenges)  
+- [Conclusion and Reflection](#6-conclusion-and-reflection)
+  
 ---
 
 ## 1. 🧭 Introduction
