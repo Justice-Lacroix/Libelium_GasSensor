@@ -87,11 +87,18 @@ Once we had the correct hardware configuration — Arduino plus direct-wired sen
 
 ## 5. ⚠️ Challenges
 
-- [❌ Issue 1: Unstable power supply → fixed using a capacitor]
-- [❌ Issue 2: I2C timeout problems → solved with logic analyzer debugging]
-- [❌ Incomplete documentation for component X → resolved by trial and error]
+- It was difficult to find precise information about the board. While there is a lot of general information available online, very little explains exactly how the board works or what it does.
 
----
+- Downloading and installing the software went fairly smoothly. However, inside the IDE we saw almost no meaningful results, and the board continuously entered a reset loop. We were not able to identify the root cause of this issue.
+
+- Working with Arduino also presented several challenges. It took us quite some time to figure out the correct pinout for the board.
+
+- After that, we still had to determine how to properly communicate with the sensors.
+
+- Overall, the board started to feel like a 'black box' — difficult to understand, with very limited documentation or practical examples available.
+
+- This turned out to be the most time-consuming part of the project.
+
 
 ## 6. 🧾 Conclusion and Reflection
 
