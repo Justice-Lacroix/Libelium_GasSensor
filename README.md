@@ -102,18 +102,22 @@ Once we had the correct hardware configuration — Arduino plus direct-wired sen
 
 ## 6. 🧾 Conclusion and Reflection
 
-In summary, we were able to [short summary of what was achieved].  
-What we learned:
+In summary, we were able to get 3 out of 6 sensors working reliably using the Arduino. Initially, we attempted to use an intermediate board, but this setup did not provide stable readings. Switching to the Arduino allowed us to achieve stable data acquisition and successfully transmit sensor values over Wi-Fi to the Loxone system. This fulfilled the original goal of the project, although it is unfortunate that we couldn't get all sensors operational.
 
-- [Lesson 1]
-- [Lesson 2]
+### What we learned:
 
-Recommendations for future development:
+- How to effectively search for technical information and quickly assess whether it is useful or not for the project.
+- The importance of dividing tasks within the team to work more efficiently and stay organized.
+- Working with the Libelium IDE was new for us, but since it closely resembles the Arduino IDE, the transition was smooth.
+- The most significant and valuable learning experience was understanding how to control and read sensors on the GasBoard. This was completely new to us and formed a core part of the technical growth during the project.
 
-- [Improvement idea 1]
-- [Improvement idea 2]
+### Recommendations for future development:
 
----
+- Design a custom PCB integrating the required sensors instead of using the current board.
+- Take advantage of the abundant documentation and example schematics available for the individual sensors.
+- Working directly with the sensors on a custom board will be much more straightforward and accessible.
+- Creating a custom board is expected to reduce complexity and save significant development time compared to troubleshooting the existing board.
+
 
 ## 7. 📁 Repository Structure
 
