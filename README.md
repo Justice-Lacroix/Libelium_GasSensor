@@ -97,14 +97,17 @@ This wiring layout allowed us to bypass the official interface board and directl
 
 ### Data Formatting for Loxone
 Sensor data was sent to the Loxone control unit over UDP in plain-text format. Each message followed this structure:
-> <sensor_type>: <value>
+
+```
+<sensor_type>: <value>
+```
 
 Examples:
-> Temperature: 22.5
-
-> Humidity: 45.1
-
-> CO2: 650
+```
+Temperature: 22.5
+Humidity: 45.1
+CO2: 650
+```
 
 Each value was sent as a separate UDP packet to IP 192.168.1.77, port 50003. This format was chosen for simplicity and easy parsing by the Loxone system.
 
