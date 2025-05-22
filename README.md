@@ -61,6 +61,11 @@ During the project, we used the following sources:
   [Gasses V2 datasheet](https://www.libelium.com/wp-content/uploads/2013/02/gases-sensor-board_2.0_eng.pdf)  
   [Github](https://github.com/Libelium/waspmoteapi_unstable)
 
+### Code aproach
+
+We studied the [official WaspmoteAPI GitHub library](https://github.com/Libelium/waspmoteapi_unstable) to understand how Libelium’s original code interacted with the sensor board. Our goal was to mimic the logic in Arduino code using a more accessible ESP-based microcontroller.
+
+However, this turned out to be far more confusing than expected. The library is tightly integrated with Libelium’s proprietary hardware, and copying the code 1:1 did not work on our setup. We had to reverse-engineer many functions and adapt pin control and amplifier logic manually to achieve stable readings.
 
 ### Sensor control
 
@@ -89,6 +94,19 @@ To connect the Libelium Waspmote Gas Sensor Board V2 to our Arduino, we followed
 ![Wiring Diagram](Pictures/wiring_diagram.png)
 
 This wiring layout allowed us to bypass the official interface board and directly read analog and digital signals using the Arduino.
+
+### Sensor Accuracy & Results
+Of all connected sensors, only the temperature sensor (AN1) produced consistent and realistic readings.
+
+Other sensors (humidity, CO₂, O₂, CO) gave unstable or incorrect values, despite following the expected wiring and control sequences. Possible causes include:
+
+Incomplete documentation on required warm-up or stabilization periods
+
+Misconfigured amplifier gains
+
+Sensor degradation or incompatibility with our simplified hardware setup
+
+As a result, our testing and conclusions focused primarily on the temperature sensor, which provided a reliable reference point for verifying our code and wiring.
 
 ---
 
