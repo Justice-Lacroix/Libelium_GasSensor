@@ -111,6 +111,23 @@ CO2: 650
 
 Each value was sent as a separate UDP packet to IP 192.168.1.77, port 50003. This format was chosen for simplicity and easy parsing by the Loxone system.
 
+### Custom Interface Board
+To simplify connections between the Arduino and the Waspmote Gas Sensor Board, we designed and soldered a small custom interface board. This allowed for:
+
+- Cleaner and more reliable wiring
+- Easier access to both analog and digital signal lines
+- Consistent mechanical connection during testing
+
+Below are front and back views of the custom board:
+
+![Front view](Pictures/front.png)
+
+
+![Back view](Pictures/back.png)
+
+
+This board helped reduce loose connections and made debugging significantly easier during sensor testing.
+
 ### Sensor Accuracy & Results
 Of all connected sensors, only the temperature sensor (AN1) produced consistent and realistic readings.
 
