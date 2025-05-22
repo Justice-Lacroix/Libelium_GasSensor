@@ -62,6 +62,34 @@ During the project, we used the following sources:
   [Github](https://github.com/Libelium/waspmoteapi_unstable)
 
 
+### Sensor control
+
+We used the Arduino IDE and wrote custom code to read analog values from the Libelium Gas Sensor Board via specific analog and digital pins on the ESP32. Below is a summary of how the sensor readings were interpreted based on the code:
+
+- Temperature sensor (AN1): Analog voltage was converted using the formula:
+  *T (°C) = (Vout - 0.5) / 0.01*
+
+- Humidity sensor (AN4): Readings were averaged over 10 samples, using the formula:
+  *Humidity = (Voltage - 800) / 31*, where voltage is derived from a 0.6x scaled 3.3V input.
+
+- CO₂ sensor (AN3 + DIG2): Digital pin 2 enables CO₂ mode. Voltage readings were mapped to ppm using a lookup + interpolation.
+
+- O₂ sensor (AN3 + DIG2 LOW): Voltage read directly from analog pin AN3 after disabling DIG2.
+
+- Socket3A (AN7 + DIG1, DIG6, DIG7): A pulsed measurement sequence was used to activate the TGS2442 CO sensor, with readings taken from AN7.
+
+- Wi-Fi & UDP: Sensor readings were sent over Wi-Fi using UDP packets to a Loxone control unit at IP 192.168.1.77, port 50003.
+
+- This code-based mapping and logic were crucial for understanding how each sensor operates and for verifying successful sensor communication without relying on the original Libelium interface board.
+
+### Wiring diagram
+
+To connect the Libelium Waspmote Gas Sensor Board V2 to our Arduino, we followed the pinout shown below:
+
+![Wiring Diagram](Pictures/wiring_diagram.png)
+
+This wiring layout allowed us to bypass the official interface board and directly read analog and digital signals using the Arduino.
+
 ---
 
 ## 5. ✅ What Went Well
