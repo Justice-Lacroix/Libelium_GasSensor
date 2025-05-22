@@ -120,10 +120,10 @@ To simplify connections between the Arduino and the Waspmote Gas Sensor Board, w
 
 Below are front and back views of the custom board:
 
-![Front view](Pictures/front.png)
+![Front view](Pictures/front.jpg)
 
 
-![Back view](Pictures/back.png)
+![Back view](Pictures/back.jpg)
 
 
 This board helped reduce loose connections and made debugging significantly easier during sensor testing.
