@@ -58,12 +58,9 @@ This project focuses on monitoring air quality and making the sensor data availa
 During the project, we used the following sources:
 
 - Datasheets:  
-  [Component name] ([link])  
-- Application notes:  
-  [Title – Manufacturer – link]  
-- Tutorials and guides:  
-  [YouTube / blog articles / etc.]  
-- Own measurements and testing  
+  [Gasses V2 datasheet](https://www.libelium.com/wp-content/uploads/2013/02/gases-sensor-board_2.0_eng.pdf)  
+  [Github](https://github.com/Libelium/waspmoteapi_unstable)
+
 
 ---
 
